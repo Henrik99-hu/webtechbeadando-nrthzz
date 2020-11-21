@@ -1,0 +1,75 @@
+body {
+    background-color: lightblue;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logoText{
+    font-size: 1em;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+#content{
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+#manufacturersTable, #carsTable{
+    width: 75%;
+}
+
+th{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+th, td{
+    padding: 12px 15px;
+}
+
+tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+#manufacturersTable, #carsTable:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.submitButtons{
+    width: 100%;
+}

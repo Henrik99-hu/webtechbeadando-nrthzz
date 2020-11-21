@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <script src="js/cars.js" type="text/javascript"></script>
+
+    <div class="forms">
+
+    <form method="POST" action="https://webtechcars.herokuapp.com/api/cars">
+    
+        <table>
+
+            <th colspan="2">Only fill the ID, if you want to edit a car's data</th>
+            <tr>
+                <td>ID:</td>
+                <td><input id="id" type="text" name="name" autofocus/></td>
+            </tr>
+
+            <tr>
+                <td>Name:</td>
+                <td><input id="name" type="text" name="name" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Consumption:</td>
+                <td><input id="consumption" type="text" name="consumption" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Color:</td>
+                <td><input id="color" type="text" name="color" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Manufacturer:</td>
+                <td>
+                    <select id="manufacturer" name="manufacturer" required="required" autofocus>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Available:</td>
+                <td><input id="available" type="number" name="available" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Year:</td>
+                <td><input id="year" type="number" name="year" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Horsepower:</td>
+                <td><input id="horsepower" type="number" name="horsepower" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="submitButtons" id="addCar" type="submit">Add Car</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="submitButtons" id="modifyCar" type="submit">Modify car</button></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <form method="POST" action="https://webtechcars.herokuapp.com/api/manufacturers">
+    
+        <table>
+            <th colspan="2">Fill ID of car to delete</th>
+            <tr>
+                <td>ID:</td>
+                <td><input id="id2" type="text" name="id" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="submitButtons" id="deleteCar" type="submit">Delete Car</button></td>
+            </tr>
+        </table>
+
+    </form>
+    
+    </div>
+
+    <hr>
+
+    <table id="carsTable">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Consumption</th>
+            <th>Color</th>
+            <th>Manufacturer</th>
+            <th>Available</th>
+            <th>Year</th>
+            <th>Horsepower</th>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    
+
+</html>

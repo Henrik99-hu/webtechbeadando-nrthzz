@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <script src="js/manufacturers.js" type="text/javascript"></script>
+
+    <div class="forms">
+
+    <form method="POST" action="https://webtechcars.herokuapp.com/api/manufacturers">
+    
+        <table>
+            <th colspan="2">Only fill the ID, if you want to edit a manufacturer's data</th>
+            <tr>
+                <td>ID:</td>
+                <td><input id="id" type="text" name="name" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input id="name" type="text" name="name" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input id="country" type="text" name="country" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td>Founded:</td>
+                <td><input id="founded" type="number" name="founded" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="submitButtons" id="addManufacturer" type="submit">Add Manufacturer</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="submitButtons" id="modifyManufacturer" type="submit">Modify Manufacturer</button></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <form method="POST" action="https://webtechcars.herokuapp.com/api/manufacturers">
+    
+        <table>
+            <th colspan="2">Fill ID of manufacturer to delete</th>
+            <tr>
+                <td>ID:</td>
+                <td><input id="id2" type="text" name="id" required="required" autofocus/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="submitButtons" id="deleteManufacturer" type="submit">Delete Manufacturer</button></td>
+            </tr>
+        </table>
+
+    </form>
+
+    </div>
+
+    <hr>
+
+    <table id="manufacturersTable">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Founded</th>
+        </tr>
+
+    </table>
+
+    <hr>
+
+</html>
